@@ -1,0 +1,144 @@
+<mxfile host="Electron">
+  <diagram name="SPACE EERD" id="eerd1">
+    <mxGraphModel dx="1377" dy="1079" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SPACE" parent="1" style="whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;strokeWidth=3;" value="SPACE" vertex="1">
+          <mxGeometry height="60" width="170" x="615" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="FAC" parent="1" style="whiteSpace=wrap;html=1;fontSize=12;fontStyle=1;fillColor=#f5f5f5;strokeColor=#888888;dashed=1;fontColor=#555555;" value="FACILITY" vertex="1">
+          <mxGeometry height="56" width="150" x="105" y="302" as="geometry" />
+        </mxCell>
+        <mxCell id="SLOT" parent="1" style="whiteSpace=wrap;html=1;fontSize=12;fontStyle=1;fillColor=#f5f5f5;strokeColor=#888888;dashed=1;fontColor=#555555;" value="SCHEDULE_SLOT" vertex="1">
+          <mxGeometry height="56" width="160" x="1140" y="302" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#333333;perimeter=rhombusPerimeter;" value="contains" vertex="1">
+          <mxGeometry height="64" width="120" x="380" y="298" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#333333;perimeter=rhombusPerimeter;" value="offers" vertex="1">
+          <mxGeometry height="64" width="120" x="900" y="298" as="geometry" />
+        </mxCell>
+        <mxCell id="ed1" edge="1" parent="1" source="FAC" style="shape=link;width=5;endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.5;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" target="r1" value="1">
+          <mxGeometry relative="1" x="-0.55" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ed2" edge="1" parent="1" source="SPACE" style="shape=link;width=5;endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.5;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" target="r1" value="N">
+          <mxGeometry relative="1" x="-0.45" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ed3" edge="1" parent="1" source="SPACE" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.5;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" target="r2" value="1">
+          <mxGeometry relative="1" x="-0.55" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ed4" edge="1" parent="1" source="SLOT" style="shape=link;width=5;endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.5;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" target="r2" value="N">
+          <mxGeometry relative="1" x="-0.55" y="-13" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_SpaceID" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#333333;fontStyle=4;" value="SpaceID" vertex="1">
+          <mxGeometry height="44" width="112" x="513" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="ed5" edge="1" parent="1" source="SPACE" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.5;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" target="a_SpaceID" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_SpaceNo" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#333333;" value="SpaceNo" vertex="1">
+          <mxGeometry height="44" width="112" x="564" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ed6" edge="1" parent="1" source="SPACE" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.5;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" target="a_SpaceNo" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_SpaceType" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#333333;strokeWidth=2.5;strokeColor=#CC0000;" value="SpaceType" vertex="1">
+          <mxGeometry height="44" width="112" x="676" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ed7" edge="1" parent="1" source="SPACE" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.5;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" target="a_SpaceType" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_IsRentable" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#333333;" value="IsRentable" vertex="1">
+          <mxGeometry height="44" width="112" x="740" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="ed9" edge="1" parent="1" source="SPACE" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.5;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" target="a_IsRentable" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ISA" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#ffffff;strokeColor=#333333;strokeWidth=2;" value="d" vertex="1">
+          <mxGeometry height="48" width="48" x="676" y="476" as="geometry" />
+        </mxCell>
+        <mxCell id="ed10" edge="1" parent="1" source="SPACE" style="shape=link;width=5;endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.5;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" target="ISA" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="COURT" parent="1" style="whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;" value="COURT" vertex="1">
+          <mxGeometry height="56" width="150" x="175" y="622" as="geometry" />
+        </mxCell>
+        <mxCell id="ed11" edge="1" parent="1" source="ISA" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.5;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;fontSize=16;" target="COURT" value="∪">
+          <mxGeometry relative="1" x="0.45" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TRACK" parent="1" style="whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;" value="TRACK" vertex="1">
+          <mxGeometry height="56" width="150" x="625" y="622" as="geometry" />
+        </mxCell>
+        <mxCell id="ed12" edge="1" parent="1" source="ISA" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.5;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;fontSize=16;" target="TRACK" value="∪">
+          <mxGeometry relative="1" x="0.45" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ROOM" parent="1" style="whiteSpace=wrap;html=1;fontSize=13;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;" value="ROOM" vertex="1">
+          <mxGeometry height="56" width="150" x="1075" y="622" as="geometry" />
+        </mxCell>
+        <mxCell id="ed13" edge="1" parent="1" source="ISA" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.5;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;fontSize=16;" target="ROOM" value="∪">
+          <mxGeometry relative="1" x="0.45" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_COURT_CourtType" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#333333;" value="CourtType" vertex="1">
+          <mxGeometry height="44" width="112" x="118" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="ed14" edge="1" parent="1" source="COURT" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.5;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" target="a_COURT_CourtType" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_COURT_Address" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#333333;" value="&lt;span style=&quot;text-decoration: underline;&quot;&gt;CourtID&lt;/span&gt;" vertex="1">
+          <mxGeometry height="44" width="112" x="230" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="ed15" edge="1" parent="1" source="COURT" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.5;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" target="a_COURT_Address" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_TRACK_Address" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#333333;" value="&lt;span style=&quot;text-decoration: underline;&quot;&gt;TrackID&lt;/span&gt;" vertex="1">
+          <mxGeometry height="44" width="112" x="588" y="706" as="geometry" />
+        </mxCell>
+        <mxCell id="ed17" edge="1" parent="1" source="TRACK" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.5;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" target="a_TRACK_Address" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_ROOM_RoomType" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#333333;" value="RoomType" vertex="1">
+          <mxGeometry height="44" width="112" x="1040" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="ed19" edge="1" parent="1" source="ROOM" style="endArrow=none;html=1;rounded=0;strokeColor=#333333;strokeWidth=1.5;fontSize=13;fontStyle=1;labelBackgroundColor=#ffffff;" target="a_ROOM_RoomType" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl1" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=12;" value="&lt;b&gt;Complete (total)&lt;/b&gt;: double line&lt;br&gt;&lt;b&gt;Defining attribute&lt;/b&gt;: SpaceType" vertex="1">
+          <mxGeometry height="40" width="230" x="730" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl2" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=12;" value="&lt;b&gt;Disjoint&lt;/b&gt; (d)" vertex="1">
+          <mxGeometry height="22" width="120" x="752" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=12;" value="&lt;b style=&quot;font-size:18px&quot;&gt;EERD: &lt;/b&gt;&lt;span style=&quot;font-size:18px&quot;&gt;SPACE speci&lt;/span&gt;&lt;span style=&quot;font-size:18px&quot;&gt;alization&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="420" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=12;" value="&lt;b&gt;Reading the diagram&lt;/b&gt;&lt;br&gt;&amp;bull; &lt;b&gt;d&lt;/b&gt; = disjoint: a space is exactly one of COURT, TRACK or ROOM, never two at once (an overlapping design would use &lt;b&gt;o&lt;/b&gt;).&lt;br&gt;&amp;bull; &lt;b&gt;Double line&lt;/b&gt; from SPACE to the circle = complete (total) specialization: every SPACE must be a COURT, TRACK or ROOM; there is no &quot;other&quot; space.&lt;br&gt;&amp;bull; &lt;b&gt;&amp;cup;&lt;/b&gt; on each line = subset symbol (the subtype is a subset of SPACE). Subtypes inherit SpaceID, SpaceNo, UsageMode, IsRentable, SpaceType and the relationships to FACILITY and SCHEDULE_SLOT.&lt;br&gt;&amp;bull; Underlined = key. Red outline = attribute that defines the subtype (SpaceType = COURT / TRACK / ROOM). Grey dashed boxes are context only. Double lines to FACILITY mean total participation.&lt;br&gt;&amp;bull; Rock Court is a COURT (CourtType = Rock); Address and Contact apply to it and to TRACK only, so they are optional on COURT. Pools and studios are ROOMs (RoomType)." vertex="1">
+          <mxGeometry height="150" width="1300" x="40" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="SBUjzU-0Wfxb9HEv7D-L-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;SpaceType&lt;/b&gt;: this attribute is the subtype discriminator&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="230" x="850" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="SBUjzU-0Wfxb9HEv7D-L-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#ffffff;strokeColor=#333333;" value="&lt;span style=&quot;text-decoration: underline;&quot;&gt;RoomID&lt;/span&gt;" vertex="1">
+          <mxGeometry height="44" width="112" x="1164" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="SBUjzU-0Wfxb9HEv7D-L-5" edge="1" parent="1" source="SBUjzU-0Wfxb9HEv7D-L-4" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.606;entryY=0.939;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="ROOM">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
